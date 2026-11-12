@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For My Favourite Human ❤️</title>
+<style>
+:root{--pink:#ff7398;--deep:#a8325b;--ink:#563044;--pale:#fff4f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,serif;color:var(--ink);background:linear-gradient(145deg,#fff3f6,#ffe0e9 55%,#fbd0df);overflow-x:hidden}
+main{max-width:850px;margin:auto;padding:26px 15px 70px}
+.hero,.panel{background:#ffffffd9;border:1px solid #fff;border-radius:27px;padding:clamp(22px,5vw,42px);text-align:center;box-shadow:0 15px 45px #9d35551c;margin:16px 0}
+.kicker{font:700 11px Arial;letter-spacing:4px;text-transform:uppercase;color:#d35d7e}
+h1{font-size:clamp(38px,8vw,65px);line-height:1.05;color:var(--deep);margin:17px 0}
+h2{font-size:clamp(25px,5vw,34px);color:var(--deep);margin:5px 0 12px}
+p{line-height:1.8}
+.sub{font:15px/1.8 Arial,sans-serif;color:#805b6d;max-width:550px;margin:0 auto 22px}
+button{border:0;border-radius:999px;padding:13px 21px;background:linear-gradient(120deg,#ff83a2,#e94f7c);color:white;font-weight:bold;cursor:pointer;margin:6px;box-shadow:0 7px 18px #e94f7c35}
+button:hover{transform:translateY(-2px)}
+.heart{font-size:42px;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.18)}}
+.hidden{display:none}.show{display:block;animation:appear .6s ease}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.letter{white-space:pre-line;text-align:left;background:#fff7f9;border:1px solid #f7d6e0;border-radius:18px;padding:22px;line-height:1.9;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px;margin-top:18px}
+.note{background:#fff7f9;border:1px solid #f5d8e1;border-radius:18px;padding:17px;text-align:left;line-height:1.65}
+.note b{color:#c0446b}
+.pill{display:inline-block;background:#ffe4ec;color:#a83b61;padding:7px 12px;border-radius:99px;font:12px Arial;margin:4px}
+.cake-area{min-height:260px;display:grid;place-items:center;position:relative;margin:8px auto}
+.cake{position:relative;width:190px;height:150px;cursor:pointer;transition:.5s}
+.plate{position:absolute;bottom:8px;left:0;width:190px;height:18px;background:#f4b7c9;border-radius:50%;box-shadow:0 6px 0 #e995ae}
+.layer{position:absolute;left:20px;width:150px;height:48px;border-radius:12px 12px 18px 18px;background:linear-gradient(#ffb3c7 0 18%,#fff0f4 18% 32%,#ef8eaa 32%);bottom:23px;box-shadow:inset 0 -5px #df7696}
+.layer.top{left:35px;width:120px;height:43px;bottom:66px;background:linear-gradient(#fff3f6 0 24%,#f18eaa 24% 44%,#fff1f5 44%);border-radius:13px 13px 8px 8px}
+.candle{position:absolute;z-index:2;bottom:108px;left:91px;width:8px;height:35px;border-radius:4px;background:repeating-linear-gradient(45deg,#fff 0 5px,#ff80a1 5px 10px)}
+.flame{position:absolute;bottom:140px;left:88px;width:15px;height:21px;background:radial-gradient(ellipse at 50% 70%,#fff6a7 0 20%,#ffb52e 45%,#ff6e36 75%);border-radius:50% 50% 45% 45%;filter:drop-shadow(0 0 8px #ffb52e);animation:flicker .4s infinite alternate}
+@keyframes flicker{to{transform:rotate(8deg) scale(.88)}}
+.cake.cut .layer{transform:rotate(-8deg) translateX(22px);clip-path:polygon(0 0,100% 0,85% 100%,0 100%)}
+.cake.cut .flame{opacity:0;transform:scale(.2)}
+.cake.cut:after{content:"🍰";position:absolute;right:-22px;top:45px;font-size:40px;animation:appear .5s}
+.cake.cut .candle{opacity:.4}
+.movie{border-radius:20px;background:linear-gradient(135deg,#9e355b,#e66f91);color:white;padding:26px;min-height:185px;display:grid;place-items:center;overflow:hidden}
+.movie .scene{font-size:48px;animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-10px)}}
+.movie p{font:14px/1.7 Arial;max-width:430px}
+footer{text-align:center;font:12px Arial;color:#9b7180;padding:15px}
+.signature{text-align:right;color:#c0446b;font-style:italic}
+
+.gift-stage{height:285px;max-width:430px;margin:18px auto 4px;position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden;border-radius:22px;background:radial-gradient(ellipse at 50% 85%,#ffe1eb 0 35%,transparent 70%)}
+.gift-box{position:absolute;bottom:27px;width:180px;height:118px;background:linear-gradient(135deg,#ff83a2,#e94f7c);border-radius:9px 9px 15px 15px;box-shadow:0 12px 22px #b8446b2b;z-index:3}
+.ribbon-v{position:absolute;left:75px;top:0;width:30px;height:100%;background:#fff0f4}
+.ribbon-h{position:absolute;top:43px;left:0;width:100%;height:25px;background:#fff0f4}
+.gift-lid{position:absolute;bottom:137px;width:202px;height:28px;border-radius:8px;background:#f45f88;z-index:5;transition:transform .65s ease;box-shadow:0 5px 9px #b8446b25}
+.gift-lid span{color:#fff;font-size:22px;position:absolute;left:91px;top:0}
+.bow{position:absolute;z-index:6;top:-27px;left:68px;font-size:42px}
+.girl{position:absolute;z-index:2;bottom:118px;width:145px;height:175px;transform:translateY(125px) scale(.75);opacity:0;transition:transform .8s cubic-bezier(.2,1.5,.5,1),opacity .3s}
+.head{position:absolute;top:10px;left:43px;width:60px;height:65px;border-radius:48% 48% 45% 45%;background:#ffd5bd;z-index:2;box-shadow:inset -5px -2px #f4bca9}
+.hair{position:absolute;z-index:3;top:2px;left:38px;width:70px;height:48px;border-radius:55% 55% 35% 35%;background:#583344;transform:rotate(-4deg)}
+.hair:after{content:"";position:absolute;right:-4px;top:25px;width:20px;height:55px;background:#583344;border-radius:0 0 15px 15px}
+.eye{position:absolute;top:28px;width:5px;height:7px;border-radius:50%;background:#573447}
+.eye.left{left:17px}.eye.right{right:17px}
+.blush{position:absolute;top:39px;width:10px;height:6px;border-radius:50%;background:#f69aa8;opacity:.8}
+.blush.left{left:7px}.blush.right{right:7px}
+.smile{position:absolute;left:25px;top:43px;width:12px;height:7px;border-bottom:2px solid #a94d62;border-radius:50%}
+.body-dress{position:absolute;top:69px;left:35px;width:78px;height:78px;background:#ff83a2;clip-path:polygon(25% 0,75% 0,100% 100%,0 100%);border-radius:15px;z-index:1}
+.arm{position:absolute;top:80px;width:17px;height:62px;background:#ffd5bd;border-radius:15px;z-index:4;transform-origin:top center}
+.arm-left{left:29px;transform:rotate(22deg)}.arm-right{right:28px;transform:rotate(-22deg)}
+.leg{position:absolute;top:140px;width:15px;height:28px;background:#ffd5bd;border-radius:10px}
+.leg-left{left:52px}.leg-right{right:52px}
+.hug-heart{position:absolute;top:45px;right:-8px;font-size:25px;opacity:0;transform:scale(.2)}
+.gift-sparkles{position:absolute;top:25px;font-size:25px;opacity:0;z-index:6}
+.gift-stage.open .gift-lid{transform:translate(80px,-85px) rotate(28deg)}
+.gift-stage.open .girl{transform:translateY(-4px) scale(1);opacity:1}
+.gift-stage.open .arm-left{animation:reachLeft .65s 1s forwards}
+.gift-stage.open .arm-right{animation:reachRight .65s 1s forwards}
+.gift-stage.open .hug-heart{animation:heartPop .7s 1.2s forwards}
+.gift-stage.open .gift-sparkles{animation:sparklePop 1s .5s forwards}
+@keyframes reachLeft{to{transform:rotate(65deg) translate(-9px,-4px)}}
+@keyframes reachRight{to{transform:rotate(-65deg) translate(9px,-4px)}}
+@keyframes heartPop{to{opacity:1;transform:scale(1.3) translateY(-10px)}}
+@keyframes sparklePop{0%{opacity:0;transform:scale(.4)}40%{opacity:1;transform:scale(1.2)}100%{opacity:.8;transform:scale(1)}}
+
+</style>
+</head>
+<body>
+<main>
+<section class="hero">
+<div class="kicker">A little birthday universe made just for you</div>
+<div class="heart">❤️</div>
+<h1>Happy Birthday,<br>My Favourite Human!</h1>
+<p class="sub">Today you get unlimited love, unlimited cake and absolutely no escaping my silly messages. 😌</p>
+<button onclick="document.getElementById('surprise').classList.toggle('show')">Open your first surprise 💌</button>
+<div id="surprise" class="hidden letter">Happiest birthday, my love! ❤️
+
+I hope this year brings you peaceful days, big achievements, silly laughs and all the happiness you deserve. Thank you for being part of my world. You make ordinary moments feel special, even when you're annoying me. 😂
+
+I may not have the perfect words every time, but please never doubt this: I care about you so much, I believe in you, and I'll always wish the best for you.
+
+Today, smile extra wide. It's your day! 🫶
+<div class="signature">With all my love, always 💗</div></div>
+</section>
+
+<section class="panel">
+<div class="kicker">Birthday ritual</div><h2>Okay… let's cut your cake! 🎂</h2>
+<p>Make a wish first. Don't tell me what it is! Tap the cake to cut it.</p>
+<div class="cake-area">
+<div class="cake" id="cake" role="button" tabindex="0" aria-label="Tap to cut the cake" onclick="cutCake()">
+<div class="flame"></div><div class="candle"></div><div class="layer top"></div><div class="layer"></div><div class="plate"></div>
+</div></div>
+<div id="cakeText">Your birthday cake is waiting…</div>
+<button onclick="cutCake()">Cut the cake! 🔪</button>
+</section>
+
+
+<section class="panel">
+  <div class="kicker">A special delivery, just for you</div>
+  <h2>Someone is hiding in your gift box! 🎁</h2>
+  <p>Open it… there's a little surprise waiting to give you the biggest virtual hug. 🥹</p>
+  <div class="gift-stage" id="giftStage">
+    <div class="girl" id="giftGirl" aria-hidden="true">
+      <div class="hair"></div><div class="head"><span class="eye left"></span><span class="eye right"></span><span class="blush left"></span><span class="blush right"></span><span class="smile"></span></div>
+      <div class="body-dress"></div>
+      <div class="arm arm-left"></div><div class="arm arm-right"></div>
+      <div class="leg leg-left"></div><div class="leg leg-right"></div>
+      <div class="hug-heart">❤️</div>
+    </div>
+    <div class="gift-lid" id="giftLid"><span>♡</span></div>
+    <div class="gift-box"><div class="ribbon-v"></div><div class="ribbon-h"></div><div class="bow">🎀</div></div>
+    <div class="gift-sparkles" id="giftSparkles">✨ 💗 ✨</div>
+  </div>
+  <button id="giftButton" onclick="openGift()">Open your gift 🎀</button>
+  <div id="giftMessage" class="hidden letter">SURPRISEEEE! 🤗💗
+
+A tiny girl just jumped out of this box to give you the warmest hug ever!
+
+Imagine me running towards you, wrapping my arms around you and not letting go for a little while. You deserve all the hugs, happiness and love in this world.
+
+Happy birthday, my favourite human! 🫂❤️</div>
+</section>
+
+<section class="panel">
+<div class="kicker">Our tiny movie moment</div><h2>A little birthday movie 🎬</h2>
+<div class="movie"><div><div class="scene" id="scene">🌙 ✨ 💗</div><p id="movieText">Once upon a time, my favourite person was born… and the world got a little more wonderful.</p><button onclick="nextScene()">Play our mini story ▶</button></div></div>
+<p class="sub">This is a cute animated mini-story, not a real AI-generated video. You can replace it with a personalised AI video later if you make one.</p>
+</section>
+
+<section class="panel">
+<div class="kicker">Things I secretly adore</div><h2>100 reasons? Let's start with these 💗</h2>
+<div class="grid">
+<div class="note">🥰 <b>Your smile</b><br>It can fix a bad day without even trying.</div>
+<div class="note">😂 <b>Your silly side</b><br>Even your nonsense makes me laugh.</div>
+<div class="note">🫶 <b>Your care</b><br>The little things you do mean a lot.</div>
+<div class="note">✨ <b>Your dreams</b><br>I hope you achieve every single one.</div>
+<div class="note">🤍 <b>Your presence</b><br>Sometimes just talking to you is enough.</div>
+<div class="note">🙄 <b>Your annoying face</b><br>Unfortunately, I love that too.</div>
+</div>
+</section>
+
+<section class="panel">
+<div class="kicker">Our very serious relationship report</div><h2>Our silly fights 😂</h2>
+<p>Official records of two people who love each other but sometimes act like cartoon characters.</p>
+<div class="grid">
+<div class="note"><b>Fight #01: The late reply case</b><br>Me: "Why did you reply late?"<br>You: "I was busy."<br>Me: "Okay." (Not okay.) 😤</div>
+<div class="note"><b>Fight #02: The last word</b><br>Me: "Fine, you win."<br>You: "Really?"<br>Me: "No, I just wanted the last word." 😌</div>
+<div class="note"><b>Fight #03: The food debate</b><br>Me: "What shall we eat?"<br>You: "Anything."<br>Me: "Okay, choose."<br>You: "You choose." A never-ending story. 😭</div>
+<div class="note"><b>Final judgement</b><br>Both are dramatic. Both are stubborn. Both are still each other's favourite. Case closed. ❤️</div>
+</div>
+<button onclick="document.getElementById('makeup').classList.toggle('show')">Press if you forgive me 🥺</button>
+<div id="makeup" class="hidden letter">Truce? 🥹 No matter how many silly fights we have, I never want a small argument to become bigger than the love and respect we have for each other. Now come here… virtual hug! 🫂❤️</div>
+</section>
+
+<section class="panel">
+<div class="kicker">One last little thing</div><h2>Tap for a random love note 💌</h2>
+<p id="randomNote">Your surprise note is waiting…</p>
+<button onclick="randomLove()">Give me a note ✨</button>
+<div style="margin-top:22px"><span class="pill">One big hug 🫂</span><span class="pill">Unlimited kisses 😘</span><span class="pill">Always on your team ❤️</span></div>
+</section>
+<footer>Made with love, a little drama, and lots of heart. Happy Birthday! ♡</footer>
+</main>
+<script>
+function cutCake(){const c=document.getElementById('cake');c.classList.add('cut');document.getElementById('cakeText').textContent='Yayyy! Cake cut! 🎉 Make your wish come true, birthday boy! ❤️';}
+const scenes=[['🌙 ✨ 💗','Once upon a time, my favourite person was born… and the world got a little more wonderful.'],['🧸 💞 🌷','Then came the laughs, the random talks, the cute moments and the silly fights.'],['🎂 🎉 🥳','Today is your day! I hope life gives you a thousand reasons to smile.'],['🫶 ♾️ ❤️','And in every new chapter, I hope you keep finding happiness. I’m cheering for you!']];
+let si=0;function nextScene(){si=(si+1)%scenes.length;document.getElementById('scene').textContent=scenes[si][0];document.getElementById('movieText').textContent=scenes[si][1];}
+const notes=['You are my favourite notification. 📱❤️','Even when you annoy me, I still choose you. 🙄💕','I hope you never stop chasing your dreams. I believe in you. ✨','If hugs were messages, I would spam your inbox. 🫂','You make my ordinary days feel a little more special. 🌷','Reminder: you are loved more than you know. 🥹'];
+function randomLove(){document.getElementById('randomNote').textContent=notes[Math.floor(Math.random()*notes.length)];}
+
+function openGift(){
+  const stage=document.getElementById('giftStage');
+  stage.classList.add('open');
+  document.getElementById('giftMessage').classList.add('show');
+  document.getElementById('giftButton').textContent='One more hug? 🫂';
+}
+
+</script>
+</body></html>
